@@ -1,0 +1,157 @@
+import React from "react";
+
+const careers = () => {
+  return (
+    <div id="careers" className="w-full">
+      {/* Hero Section */}
+      <section className="relative w-full h-[742px] flex">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img
+            src="/images/careers.png" 
+            alt="Team working"
+            className="w-full h-full object-cover"
+          />
+          {/* Dark Overlay */}
+          <div className="absolute top-0 left-0 w-full"></div>
+        </div>
+
+        {/* Hero Content */}
+        <div className="relative z-10 flex flex-col items-start pl-[62px] pt-[163px] max-w-[751px]">
+          <h1
+            className="text-[#282828] font-['Wix_Madefor_Display'] font-[600px] text-[56px] leading-[64px] tracking-[-2px]"
+          >
+            Engineer the Future With Us
+          </h1>
+
+          <p className="max-w-[656px] mt-[16px] font-['Wix_Madefor_Display'] font-normal text-[16px] leading-[28px] text-[#000000]">
+            At Anvi, we're building tomorrow's technology today - and we want visionaries like 
+            you to join us in creating the next generation of intelligent systems.
+          </p>
+
+          <a
+            href="#openings"
+            className="mt-[24px] px-[23px] py-[10px]
+            bg-gradient-to-r from-white to-white
+            hover:from-cyan-500 hover:to-cyan-500
+            bg-[length:0%_100%] hover:bg-[length:100%_100%]
+            bg-left bg-no-repeat
+            transition-[background-size] duration-500 ease-out
+            text-[#1E9AB0] hover:text-white
+            border-[2px] border-[#1E9AB0] font-['Wix_Madefor_Display'] text-[16px] rounded-[16px] shadow-md inline-flex items-center"
+          >
+            Browse Openings <span className="text-xl"></span>
+          </a>
+        </div>
+      </section>
+
+      <div className="px-[118px] py-[100px]">
+        <div className="flex flex-col items-center text-center gap-[16px] font-['Wix_Madefor_Display'] mb-[76px]">
+          <p className="text-[#000000] text-[48px] font-normal">Reason to Join in Anvi</p>
+          <p className="text-blak text-[16px] font-normal max-w-[495px]">
+              At Anvi, you’ll find more than a career - you’ll discover purpose, growth, collaboration, and impact
+          </p>
+        </div>
+        <div className="font-dm-sans grid grid-cols-1 md:grid-cols-2 gap-[67.39px]">
+          <div>
+            <img src="/images/career2.1.png"
+                  alt="Team"
+                  className="w-"
+            />
+            <p className="mt-[32px] font-normal text-[24px]">Innovate with Purpose</p>
+            <p className="mt-[11px] text-[16px] text-[#484848]">
+              Work on breakthrough robotics and deep-tech innovations that go beyond boundaries, 
+              solving real-world challenges across industries and communities. At Anvi, you will 
+              explore ambitious ideas, design scalable systems, and collaborate with bright minds. 
+              Together, we shape industries of the future while driving safety, efficiency, and 
+              sustainability for people, businesses, and the planet.
+            </p>
+          </div>
+          <div>
+            <img src="/images/career2.2.png"
+                  alt="Team"
+                  className="w-"
+            />
+            <p className="mt-[32px] font-normal text-[24px]">Grow Without Limits</p>
+            <p className="mt-[11px] text-[16px] text-[#484848]">
+              Explore ambitious ideas, embrace challenges, upskill continuously, 
+              collaborate with innovators, and build a career that grows, evolves, 
+              and scales with your limitless potential.
+            </p>
+          </div>
+          <div>
+            <img src="/images/career2.3.png"
+                  alt="Team"
+                  className="w-"
+            />
+            <p className="mt-[32px] font-normal text-[24px]">Collaborate & Belong</p>
+            <p className="mt-[11px] text-[16px] text-[#484848]">
+              Be part of a culture that values teamwork, inclusion, respect, and diverse 
+              perspectives, where collaboration, creativity, and shared purpose drive 
+              excellence and meaningful progress.
+            </p>
+          </div>
+          <div>
+            <img src="/images/career2.4.png"
+                  alt="Team"
+                  className="w-"
+            />
+            <p className="mt-[32px] font-normal text-[24px]">Impact That Matters</p>
+            <p className="mt-[11px] text-[16px] text-[#484848]">
+              Create solutions that drive industry progress, deliver measurable impact, 
+              and at the same time inspire communities while supporting sustainability 
+              for a smarter, safer, and better shared future.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* section 3*/}
+      <section className="relative">
+        {/* Background image */}
+        <div className="absolute inset-0">
+          <img
+            src="images/career3.1.png"
+            alt="Team working"
+            className="w-full h-full object-cover opacity-80"
+          />
+        </div>
+
+        {/* Content */}
+        <div className="relative z-10 flex flex-col md:flex-row px-[160px] py-[70px] gap-[100px]">
+          {/* Left Box */}
+          <div className="bg-[#0A879EE5] text-white px-[40px] py-[80px] rounded-2xl max-w-md">
+            <h2 className="text-2xl font-bold mb-2">LIFE AT ANVI</h2>
+            <span className="block w-[269px] h-[6px] bg-[#1E9AB0] mb-2"></span>
+            <p className="text-[15px] leading-relaxed">
+              Life at Anvi is about more than work — it’s about purpose, growth, and
+              collaboration. Here, innovation thrives, ambitious ideas take shape,
+              and every individual contributes to meaningful impact. With a culture
+              that values teamwork, learning, and sustainability, Anvi is where talent
+              transforms into progress and the future is engineered together.
+            </p>
+          </div>
+
+          {/* Right Column */}
+          <div className="flex flex-col w-fit font-inter text-[20px] font-normal leading-[20px] justify-center text-white gap-4">
+            <p>Collaborative and innovative work environment</p>
+            <span className="block w-full h-[1px] bg-white"></span>
+
+            <p>Competitive compensation and benefits</p>
+            <span className="block w-full h-[1px] bg-white"></span>
+
+            <p>Professional development opportunities</p>
+            <span className="block w-full h-[1px] bg-white"></span>
+
+            <p>Work-life balance and flexible arrangements</p>
+            <span className="block w-full h-[1px] bg-white"></span>
+
+            <p>Mentorship and career growth programs</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default careers;
