@@ -1,10 +1,8 @@
-import React from "react";
 import HeroSection from "../components/HeroSection";
 
-const careers = () => {
+const Careers = () => {
   return (
     <div id="careers" className="w-full">
-
       {/* Hero Section */}
       <HeroSection
         backgroundImage="/images/careers.png"
@@ -13,66 +11,66 @@ const careers = () => {
             you to join us in creating the next generation of intelligent systems."
         buttonText="Browse Openings"
         buttonLink="#openings"
-        headingWidth="751px" 
+        headingWidth="751px"
         descriptionWidth="656px"
       />
 
       <div className="px-[118px] py-[100px]">
         <div className="flex flex-col items-center text-center gap-[16px] font-['Wix_Madefor_Display'] mb-[76px]">
-          <p className="text-[#000000] text-[48px] font-normal">Reason to Join in Anvi</p>
+          <p className="text-[#000000] text-[48px] font-normal">
+            Reason to Join in Anvi
+          </p>
           <p className="text-blak text-[16px] font-normal max-w-[495px]">
-              At Anvi, you’ll find more than a career - you’ll discover purpose, growth, collaboration, and impact
+            At Anvi, you’ll find more than a career - you’ll discover purpose,
+            growth, collaboration, and impact
           </p>
         </div>
         <div className="font-dm-sans grid grid-cols-1 md:grid-cols-2 gap-[67.39px]">
           <div>
-            <img src="/images/career2.1.png"
-                  alt="Team"
-                  className="w-"
-            />
-            <p className="mt-[32px] font-normal text-[24px]">Innovate with Purpose</p>
+            <img src="/images/career2.1.png" alt="Team" className="w-" />
+            <p className="mt-[32px] font-normal text-[24px]">
+              Innovate with Purpose
+            </p>
             <p className="mt-[11px] text-[16px] text-[#484848]">
-              Work on breakthrough robotics and deep-tech innovations that go beyond boundaries, 
-              solving real-world challenges across industries and communities. At Anvi, you will 
-              explore ambitious ideas, design scalable systems, and collaborate with bright minds. 
-              Together, we shape industries of the future while driving safety, efficiency, and 
-              sustainability for people, businesses, and the planet.
+              Work on breakthrough robotics and deep-tech innovations that go
+              beyond boundaries, solving real-world challenges across industries
+              and communities. At Anvi, you will explore ambitious ideas, design
+              scalable systems, and collaborate with bright minds. Together, we
+              shape industries of the future while driving safety, efficiency,
+              and sustainability for people, businesses, and the planet.
             </p>
           </div>
           <div>
-            <img src="/images/career2.2.png"
-                  alt="Team"
-                  className="w-"
-            />
-            <p className="mt-[32px] font-normal text-[24px]">Grow Without Limits</p>
+            <img src="/images/career2.2.png" alt="Team" className="w-" />
+            <p className="mt-[32px] font-normal text-[24px]">
+              Grow Without Limits
+            </p>
             <p className="mt-[11px] text-[16px] text-[#484848]">
-              Explore ambitious ideas, embrace challenges, upskill continuously, 
-              collaborate with innovators, and build a career that grows, evolves, 
-              and scales with your limitless potential.
+              Explore ambitious ideas, embrace challenges, upskill continuously,
+              collaborate with innovators, and build a career that grows,
+              evolves, and scales with your limitless potential.
             </p>
           </div>
           <div>
-            <img src="/images/career2.3.png"
-                  alt="Team"
-                  className="w-"
-            />
-            <p className="mt-[32px] font-normal text-[24px]">Collaborate & Belong</p>
+            <img src="/images/career2.3.png" alt="Team" className="w-" />
+            <p className="mt-[32px] font-normal text-[24px]">
+              Collaborate & Belong
+            </p>
             <p className="mt-[11px] text-[16px] text-[#484848]">
-              Be part of a culture that values teamwork, inclusion, respect, and diverse 
-              perspectives, where collaboration, creativity, and shared purpose drive 
-              excellence and meaningful progress.
+              Be part of a culture that values teamwork, inclusion, respect, and
+              diverse perspectives, where collaboration, creativity, and shared
+              purpose drive excellence and meaningful progress.
             </p>
           </div>
           <div>
-            <img src="/images/career2.4.png"
-                  alt="Team"
-                  className="w-"
-            />
-            <p className="mt-[32px] font-normal text-[24px]">Impact That Matters</p>
+            <img src="/images/career2.4.png" alt="Team" className="w-" />
+            <p className="mt-[32px] font-normal text-[24px]">
+              Impact That Matters
+            </p>
             <p className="mt-[11px] text-[16px] text-[#484848]">
-              Create solutions that drive industry progress, deliver measurable impact, 
-              and at the same time inspire communities while supporting sustainability 
-              for a smarter, safer, and better shared future.
+              Create solutions that drive industry progress, deliver measurable
+              impact, and at the same time inspire communities while supporting
+              sustainability for a smarter, safer, and better shared future.
             </p>
           </div>
         </div>
@@ -96,11 +94,12 @@ const careers = () => {
             <h2 className="text-2xl font-bold mb-2">LIFE AT ANVI</h2>
             <span className="block w-[269px] h-[6px] bg-[#1E9AB0] mb-2"></span>
             <p className="text-[15px] leading-relaxed">
-              Life at Anvi is about more than work — it’s about purpose, growth, and
-              collaboration. Here, innovation thrives, ambitious ideas take shape,
-              and every individual contributes to meaningful impact. With a culture
-              that values teamwork, learning, and sustainability, Anvi is where talent
-              transforms into progress and the future is engineered together.
+              Life at Anvi is about more than work — it’s about purpose, growth,
+              and collaboration. Here, innovation thrives, ambitious ideas take
+              shape, and every individual contributes to meaningful impact. With
+              a culture that values teamwork, learning, and sustainability, Anvi
+              is where talent transforms into progress and the future is
+              engineered together.
             </p>
           </div>
 
@@ -126,4 +125,4 @@ const careers = () => {
   );
 };
 
-export default careers;
+export default Careers;

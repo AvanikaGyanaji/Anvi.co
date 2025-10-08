@@ -48,7 +48,7 @@ const HeroSection = ({
               text-[#1E9AB0] hover:text-white
               border-2 border-[#1E9AB0] font-['Wix_Madefor_Display'] text-[15px] sm:text-[16px] rounded-[16px] shadow-md inline-flex items-center"
           >
-            {buttonText} <span className="text-xl ml-1">↗</span>
+            {buttonText} <span className="text-xl ml-1"></span>
           </a>
         )}
       </div>

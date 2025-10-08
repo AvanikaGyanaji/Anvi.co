@@ -1,7 +1,6 @@
-import React from "react";
 import HeroSection from "../components/HeroSection";
 
-const About = () => {
+const AboutUs = () => {
   return (
     <div id="about" className="w-full">
 
@@ -263,4 +262,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutUs;

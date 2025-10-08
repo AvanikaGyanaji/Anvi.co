@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { pagesLinksList } from "../utils/PagesLinkList";
+import { mainPagesLinksList } from "../utils/PagesLinkList";
 import { useEffect, useRef, useState } from "react";
 import { Menu, Plus } from "lucide-react";
 
@@ -33,10 +33,13 @@ const Header = () => {
       {/* Desktop Navigation */}
       <nav className="hidden md:flex flex-1 ml-[200px] justify-center">
         <ul className="flex gap-6">
-          {Object.keys(pagesLinksList).map((pageKey) => (
-            <li key={pagesLinksList[pageKey]} className={currentPageStyle(pagesLinksList[pageKey])}>
+          {Object.keys(mainPagesLinksList).slice(0,-1).map((pageKey) => (
+            <li
+              key={mainPagesLinksList[pageKey]}
+              className={currentPageStyle(mainPagesLinksList[pageKey])}
+            >
               <Link
-                to={pagesLinksList[pageKey]}
+                to={mainPagesLinksList[pageKey]}
                 className="hover:text-cyan-500 transition-colors"
               >
                 {pageKey}
@@ -49,7 +52,7 @@ const Header = () => {
       {/* Contact Us */}
       <div className="hidden md:block">
         <Link
-          to={pagesLinksList["Contact Us"]}
+          to={mainPagesLinksList.ContactUs}
           className="ml-6 hover:text-cyan-500 transition-colors"
         >
           Contact Us
@@ -74,10 +77,13 @@ const Header = () => {
             <Plus color="white" size={30} className="rotate-45" />
           </button>
           <ul className="flex flex-col justify-center items-center gap-8 mt-24">
-            {Object.keys(pagesLinksList).map((pageKey) => (
-              <li key={pagesLinksList[pageKey]} className={currentPageStyle(pagesLinksList[pageKey])}>
+            {Object.keys(mainPagesLinksList).map((pageKey) => (
+              <li
+                key={mainPagesLinksList[pageKey]}
+                className={currentPageStyle(mainPagesLinksList[pageKey])}
+              >
                 <Link
-                  to={pagesLinksList[pageKey]}
+                  to={mainPagesLinksList[pageKey]}
                   onClick={() => setMobileMenuOpen(false)}
                   className="text-white text-2xl hover:text-cyan-500 transition-colors"
                 >

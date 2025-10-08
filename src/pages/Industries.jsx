@@ -1,5 +1,3 @@
-import React from "react";
-
 const Industries = () => {
   return (
     <div id="industries" className="w-full">
@@ -18,15 +16,13 @@ const Industries = () => {
 
         {/* Hero Content */}
         <div className="relative z-10 flex flex-col items-start pl-[62px] pt-[163px] max-w-[656px]">
-          <h1
-            className="text-[#282828] font-['Wix_Madefor_Display'] font-[600px] text-[56px] leading-[64px] tracking-[-2px]"
-          >
+          <h1 className="text-[#282828] font-['Wix_Madefor_Display'] font-[600px] text-[56px] leading-[64px] tracking-[-2px]">
             Industries We Transform
           </h1>
 
           <p className="mt-[16px] font-['Wix_Madefor_Display'] font-normal text-[16px] leading-[28px] text-[#000000]">
-            From Robotics to Space, Anvi transforms industries 
-            with intelligent automation and advanced technology
+            From Robotics to Space, Anvi transforms industries with intelligent
+            automation and advanced technology
           </p>
 
           <a
@@ -45,8 +41,9 @@ const Industries = () => {
             Industries of the Future
           </h2>
           <p className="max-w-[770px] font-dm-sans text-[18px] text-[#465455]">
-            From intelligent robotics to space exploration, Anvi is shaping tomorrow 
-            with deep-tech systems that transform industries and empower societies.
+            From intelligent robotics to space exploration, Anvi is shaping
+            tomorrow with deep-tech systems that transform industries and
+            empower societies.
           </p>
         </div>
         <div className="grid gap-[50px] items-center">
@@ -57,8 +54,9 @@ const Industries = () => {
                 Robotics
               </p>
               <p className="font-manrope text-gray-700 leading-relaxed mb-[32px]">
-                Blending intelligence with engineering, our robotics division 
-                is built to transform how humans interact with challenging environments on Earth.
+                Blending intelligence with engineering, our robotics division is
+                built to transform how humans interact with challenging
+                environments on Earth.
               </p>
               <div className="self-start">
                 <button className="rounded-[32px] border border-gray-200 text-gray-900 px-[23px] py-[11px]">
@@ -83,8 +81,9 @@ const Industries = () => {
                   Space
                 </p>
                 <p className="font-manrope text-gray-700 leading-relaxed mb-[32px]">
-                  Our mission is to make space safer, smarter, and scalable by advancing 
-                  innovation, fostering sustainability, and addressing global needs.
+                  Our mission is to make space safer, smarter, and scalable by
+                  advancing innovation, fostering sustainability, and addressing
+                  global needs.
                 </p>
                 <div className="self-start pb-[64px]">
                   <button className="rounded-[32px] border border-gray-200 text-gray-900 px-[23px] py-[11px]">
@@ -105,8 +104,9 @@ const Industries = () => {
                   Energy
                 </p>
                 <p className="font-manrope text-gray-700 leading-relaxed mb-[32px]">
-                  At ANVI, we harness hydrogen fuel cells to power efficient, scalable, 
-                  zero-emission systems transforming mobility and critical infrastructure.
+                  At ANVI, we harness hydrogen fuel cells to power efficient,
+                  scalable, zero-emission systems transforming mobility and
+                  critical infrastructure.
                 </p>
                 <div className="self-start pb-[64px]">
                   <button className="rounded-[32px] border border-gray-200 text-gray-900 px-[23px] py-[11px]">
@@ -129,8 +129,9 @@ const Industries = () => {
                 Entertainment
               </p>
               <p className="font-manrope text-gray-700 leading-relaxed mb-[32px]">
-                Immersive stories, limitless creativity. Get ready to explore new dimensions of 
-                imagination and bring ideas to life like never before.
+                Immersive stories, limitless creativity. Get ready to explore
+                new dimensions of imagination and bring ideas to life like never
+                before.
               </p>
               <div className="self-start">
                 <button className="rounded-[32px] border border-gray-200 text-gray-900 px-[23px] py-[11px]">
@@ -154,8 +155,9 @@ const Industries = () => {
                 Semiconductors
               </p>
               <p className="font-manrope text-gray-700 leading-relaxed mb-[32px]">
-                At Anvi, we advance semiconductor technology, creating high-performance materials 
-                and chips that power innovation across next-generation electronics.
+                At Anvi, we advance semiconductor technology, creating
+                high-performance materials and chips that power innovation
+                across next-generation electronics.
               </p>
               <div className="self-start">
                 <button className="rounded-[32px] border border-gray-200 text-gray-900 px-[23px] py-[11px]">
@@ -180,8 +182,9 @@ const Industries = () => {
                   Textiles
                 </p>
                 <p className="font-manrope text-gray-700 leading-relaxed mb-[32px]">
-                  Anvi, India’s first AI tailoring platform, merges technology and tradition 
-                  to deliver personalized formal and ethnic wear experiences.
+                  Anvi, India’s first AI tailoring platform, merges technology
+                  and tradition to deliver personalized formal and ethnic wear
+                  experiences.
                 </p>
                 <div className="self-start pb-[64px]">
                   <button className="rounded-[32px] border border-gray-200 text-gray-900 px-[23px] py-[11px]">
@@ -202,8 +205,9 @@ const Industries = () => {
                   Life Sciences
                 </p>
                 <p className="font-manrope text-gray-700 leading-relaxed mb-[32px]">
-                  Pioneering breakthroughs that improve health, empower communities, 
-                  inspire innovation, protect the planet, and create better lives
+                  Pioneering breakthroughs that improve health, empower
+                  communities, inspire innovation, protect the planet, and
+                  create better lives
                 </p>
                 <div className="self-start pb-[64px]">
                   <button className="rounded-[32px] border border-gray-200 text-gray-900 px-[23px] py-[11px]">
@@ -226,8 +230,9 @@ const Industries = () => {
                 Foundation
               </p>
               <p className="font-manrope text-gray-700 leading-relaxed mb-[32px]">
-                Creating impact from the ground up by empowering people, driving innovation, 
-                fostering sustainability, shaping communities, and transforming futures.
+                Creating impact from the ground up by empowering people, driving
+                innovation, fostering sustainability, shaping communities, and
+                transforming futures.
               </p>
               <div className="self-start">
                 <button className="rounded-[32px] border border-gray-200 text-gray-900 px-[23px] py-[11px]">

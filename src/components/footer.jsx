@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Instagram, Linkedin, MapPin, Mail } from "lucide-react";
-import { pagesLinksList } from "../utils/PagesLinkList";
+import { mainPagesLinksList } from "../utils/PagesLinkList";
 
 const Footer = () => {
   return (
@@ -15,11 +15,14 @@ const Footer = () => {
               alt="Anvi Logo"
               className="w-[366px] object-contain"
             />
-            
+
             {/* Description */}
-            <p className="text-white text-[14px] font-medium leading-[22.4px] tracking-[-0.32px] max-w-[297px]" style={{ fontFamily: '"DM Sans", sans-serif' }}>
-              Engineering Your Edge™ - We build breakthrough products, deep-tech systems, 
-              and future-proof robotics solutions across industries.
+            <p
+              className="text-white text-[14px] font-medium leading-[22.4px] tracking-[-0.32px] max-w-[297px]"
+              style={{ fontFamily: '"DM Sans", sans-serif' }}
+            >
+              Engineering Your Edge™ - We build breakthrough products, deep-tech
+              systems, and future-proof robotics solutions across industries.
             </p>
           </div>
 
@@ -32,16 +35,18 @@ const Footer = () => {
               Quick Links
             </h4>
             <ul className="flex flex-col gap-[12px]">
-              {Object.keys(pagesLinksList).map((pageKey) => (
-                <li key={pageKey}>
-                  <Link
-                    to={pagesLinksList[pageKey]}
-                    className="text-[#FFFAFF] font-medium text-[16px] leading-[22.4px] tracking-[-0.32px] hover:text-white transition-colors"
-                  >
-                    {pageKey}
-                  </Link>
-                </li>
-              ))}
+              {Object.keys(mainPagesLinksList)
+                .slice(1, -1)
+                .map((pageKey) => (
+                  <li key={pageKey}>
+                    <Link
+                      to={mainPagesLinksList[pageKey]}
+                      className="text-[#FFFAFF] font-medium text-[16px] leading-[22.4px] tracking-[-0.32px] hover:text-white transition-colors"
+                    >
+                      {pageKey}
+                    </Link>
+                  </li>
+                ))}
             </ul>
           </div>
 
@@ -50,20 +55,33 @@ const Footer = () => {
 
           {/* Contact - Starts from top */}
           <div className="flex flex-col gap-[18px] w-[281px] self-start">
-            <h4 className="text-[14px] text-[#BDBDBD] font-medium tracking-[-0.32px]">Contact</h4>
+            <h4 className="text-[14px] text-[#BDBDBD] font-medium tracking-[-0.32px]">
+              Contact
+            </h4>
             <div className="flex flex-col gap-[16px]">
               <div className="flex items-start gap-[12px]">
-                <MapPin className="w-[18px] h-[18px] mt-1 flex-shrink-0" strokeWidth={1.5} />
+                <MapPin
+                  className="w-[18px] h-[18px] mt-1 flex-shrink-0"
+                  strokeWidth={1.5}
+                />
                 <p className="text-[#FFFAFF] text-[16px] font-medium leading-[22.4px] tracking-[-0.32px]">
-                  Profound Buliders, whitefields,<br />
+                  Profound Buliders, whitefields,
+                  <br />
                   Kondapur, Telangana 500081
                 </p>
               </div>
               <div className="flex items-center gap-[12px]">
-                <Mail className="w-[18px] h-[18px] flex-shrink-0" strokeWidth={1.5} />
-                <p className="text-[#FFFAFF] text-[16px] font-medium leading-[22.4px] tracking-[-0.32px]">
+                <Mail
+                  className="w-[18px] h-[18px] flex-shrink-0"
+                  strokeWidth={1.5}
+                />
+                <a
+                  href="mailto:info@anvi.co?subject=Contact%20Request"
+                  target="_blank"
+                  className="text-[#FFFAFF] text-[16px] font-medium leading-[22.4px] tracking-[-0.32px]"
+                >
                   info@anvi.co
-                </p>
+                </a>
               </div>
             </div>
           </div>
@@ -99,7 +117,10 @@ const Footer = () => {
             </a>
           </div>
 
-          <Link to="/privacy-policy" className="hover:text-white transition-colors">
+          <Link
+            to="/privacy-policy"
+            className="hover:text-white transition-colors"
+          >
             Privacy Policy
           </Link>
         </div>
