@@ -1,46 +1,22 @@
 import React from "react";
+import HeroSection from "../components/HeroSection";
 
 const About = () => {
   return (
     <div id="about" className="w-full">
+
       {/* Hero Section */}
-      <section className="relative w-full h-[742px] flex flex-col md:flex-row">
-        {/* Background Image */}
-        <div className="absolute inset-0">
-          <img
-            src="/images/about.png"
-            alt="Team working"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute top-0 left-0 w-full"></div>
-        </div>
-
-        {/* Hero Content */}
-        <div className="relative z-10 flex flex-col items-start px-6 md:pl-[62px] pt-[120px] md:pt-[163px] max-w-full md:max-w-[734px]">
-          <h1 className="text-[#282828] font-['Wix_Madefor_Display'] font-semibold text-[36px] sm:text-[44px] md:text-[56px] leading-tight tracking-[-1px]">
-            We Engineer It.
-          </h1>
-
-          <p className="mt-4 font-['Wix_Madefor_Display'] font-normal text-[15px] sm:text-[16px] leading-[26px] md:leading-[28px] text-[#000000]">
-            At Anvi, we don’t just build robots — we build the future. Our
+      <HeroSection
+        backgroundImage="/images/about.png"
+        title="We Engineer It."
+        description="At Anvi, we don’t just build robots — we build the future. Our
             mission is to deliver strategic advantage through breakthrough
-            products, deep-tech systems, and future-proof solutions.
-          </p>
-
-          <a
-            href="#openings"
-            className="mt-6 px-6 py-3 bg-gradient-to-r from-white to-white
-              hover:from-cyan-500 hover:to-cyan-500
-              bg-[length:0%_100%] hover:bg-[length:100%_100%]
-              bg-left bg-no-repeat
-              transition-[background-size] duration-500 ease-out
-              text-[#1E9AB0] hover:text-white border-2 border-[#1E9AB0]
-              font-['Wix_Madefor_Display'] text-[15px] sm:text-[16px] rounded-[16px] shadow-md inline-flex items-center"
-          >
-            Explore Careers <span className="text-xl ml-1">↗</span>
-          </a>
-        </div>
-      </section>
+            products, deep-tech systems, and future-proof solutions."
+        buttonText="Explore Careers"
+        buttonLink="#openings"
+        headingWidth="734px"
+        descriptionWidth="656px"
+      />
 
       {/* Vision, Mission, Value Section */}
       <section className="relative w-full py-[80px] md:py-[136px] px-6 sm:px-12 md:px-[136px] bg-[#FCFCFC] font-dmsans">

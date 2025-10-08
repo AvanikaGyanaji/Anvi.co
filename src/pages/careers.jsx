@@ -1,49 +1,21 @@
 import React from "react";
+import HeroSection from "../components/HeroSection";
 
 const careers = () => {
   return (
     <div id="careers" className="w-full">
+
       {/* Hero Section */}
-      <section className="relative w-full h-[742px] flex">
-        {/* Background Image */}
-        <div className="absolute inset-0">
-          <img
-            src="/images/careers.png" 
-            alt="Team working"
-            className="w-full h-full object-cover"
-          />
-          {/* Dark Overlay */}
-          <div className="absolute top-0 left-0 w-full"></div>
-        </div>
-
-        {/* Hero Content */}
-        <div className="relative z-10 flex flex-col items-start pl-[62px] pt-[163px] max-w-[751px]">
-          <h1
-            className="text-[#282828] font-['Wix_Madefor_Display'] font-[600px] text-[56px] leading-[64px] tracking-[-2px]"
-          >
-            Engineer the Future With Us
-          </h1>
-
-          <p className="max-w-[656px] mt-[16px] font-['Wix_Madefor_Display'] font-normal text-[16px] leading-[28px] text-[#000000]">
-            At Anvi, we're building tomorrow's technology today - and we want visionaries like 
-            you to join us in creating the next generation of intelligent systems.
-          </p>
-
-          <a
-            href="#openings"
-            className="mt-[24px] px-[23px] py-[10px]
-            bg-gradient-to-r from-white to-white
-            hover:from-cyan-500 hover:to-cyan-500
-            bg-[length:0%_100%] hover:bg-[length:100%_100%]
-            bg-left bg-no-repeat
-            transition-[background-size] duration-500 ease-out
-            text-[#1E9AB0] hover:text-white
-            border-[2px] border-[#1E9AB0] font-['Wix_Madefor_Display'] text-[16px] rounded-[16px] shadow-md inline-flex items-center"
-          >
-            Browse Openings <span className="text-xl"></span>
-          </a>
-        </div>
-      </section>
+      <HeroSection
+        backgroundImage="/images/careers.png"
+        title="Engineer the Future With Us"
+        description="At Anvi, we're building tomorrow's technology today - and we want visionaries like 
+            you to join us in creating the next generation of intelligent systems."
+        buttonText="Browse Openings"
+        buttonLink="#openings"
+        headingWidth="751px" 
+        descriptionWidth="656px"
+      />
 
       <div className="px-[118px] py-[100px]">
         <div className="flex flex-col items-center text-center gap-[16px] font-['Wix_Madefor_Display'] mb-[76px]">

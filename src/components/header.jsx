@@ -4,119 +4,90 @@ import { useEffect, useRef, useState } from "react";
 import { Menu, Plus } from "lucide-react";
 
 const Header = () => {
-  const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
   const currentPage = useRef(null);
 
-  const updateMobileMenuOpen = () => {
-    setMobileMenuOpen((prev) => !prev);
-  };
-
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY >= window.innerHeight) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const getCurrentPage = () => {
     currentPage.current = location.pathname;
-  };
-
-  getCurrentPage();
+  }, [location.pathname]);
 
   const currentPageStyle = (link) =>
     currentPage.current === link ? "currentPageLink" : "";
 
   return (
     <header
-      className={`w-full h-[106px] fixed top-0 z-10 mx-auto flex align-middle text-black px-[60px] py-[34px] place-items-center font-manrope text-[16px] max-md:text-xs`}
-      style={{
-        background: scrolled
-          ? "linear-gradient(180deg, #111 60%, transparent)"
-          : "transparent",
-      }}
+      className="w-full fixed top-0 z-50 flex items-center justify-between px-4 sm:px-6 md:px-[60px] h-[106px] font-manrope text-[16px] max-md:text-xs"
+      style={{ background: "transparent" }}
     >
-      <img
-        src="/logos/anvi 1.png"
-        alt="anvi-logo"
-        loading="eager"
-        className="w-full max-w-[182px] max-md:max-h-[72px] object-cover text-sm"
-      />
-      <link rel="preload" as="image" href="/logos/anvi 1.png" />
-      <nav className="flex md:ml-[200px]">
-        {/* Desktop Nav */}
-        <ul className="nav-ul flex max-md:hidden m-0 p-0 justify-center items-center gap-[4px] md:gap-[24px]">
+      {/* Logo */}
+      <div className="flex-shrink-0">
+        <img
+          src="/logos/anvi 1.png"
+          alt="anvi-logo"
+          className="w-full max-w-[182px] max-md:max-h-[72px] object-cover"
+        />
+        <link rel="preload" as="image" href="/logos/anvi 1.png" />
+      </div>
+
+      {/* Desktop Navigation */}
+      <nav className="hidden md:flex flex-1 ml-[200px] justify-center">
+        <ul className="flex gap-6">
           {Object.keys(pagesLinksList).map((pageKey) => (
-            <li
-              key={pagesLinksList[pageKey]}
-              className={`w-auto ${currentPageStyle(pagesLinksList[pageKey])}`}
-            >
-                <Link
-                    to={pagesLinksList[pageKey]}
-                    className="hover:text-cyan-500 transition-colors"
-                    >
-                    {pageKey}
-                </Link>
+            <li key={pagesLinksList[pageKey]} className={currentPageStyle(pagesLinksList[pageKey])}>
+              <Link
+                to={pagesLinksList[pageKey]}
+                className="hover:text-cyan-500 transition-colors"
+              >
+                {pageKey}
+              </Link>
             </li>
           ))}
         </ul>
-        {/* Mobile Menu */}
-        {mobileMenuOpen && (
-          <div className="max-md:flex hidden w-screen h-screen overflow-y-auto bg-black absolute top-0 left-0">
-            <button
-              className="menu-close-btn absolute top-7 right-7 cursor-pointer border-1 border-gray-100 active:rotate-360 active:scale-75 active:opacity-10 transition-all duration-150"
-              onClick={updateMobileMenuOpen}
-            >
-              <Plus color="white" size={30} className="rotate-45 w-min h-min" />
-            </button>
-            <ul className="nav-ul max-w-[600px] m-auto flex flex-col text-center text-2xl p-0 justify-center align-middle gap-6 md:gap-[10vh]">
-              {Object.keys(pagesLinksList)
-                // .splice(0, 5)
-                .map((pageKey) => (
-                  <li
-                    key={pagesLinksList[pageKey]}
-                    className={`w-auto ${currentPageStyle(
-                      pagesLinksList[pageKey]
-                    )}`}
-                  >
-                    <Link
-                    to={pagesLinksList[pageKey]}
-                    onClick={() => setMobileMenuOpen(false)} // close menu after navigation
-                    className="hover:text-cyan-500 transition-colors"
-                    >
-                        {pageKey}
-                    </Link>
-                  </li>
-                ))}
-            </ul>
-          </div>
-        )}
       </nav>
 
-      {/* Contact Us Link */}
-      <Link
-        to={pagesLinksList["Contact Us"]}
-        className="ml-[57px] max-md:hidden hover:text-cyan-500 transition-colors"
+      {/* Contact Us */}
+      <div className="hidden md:block">
+        <Link
+          to={pagesLinksList["Contact Us"]}
+          className="ml-6 hover:text-cyan-500 transition-colors"
         >
-        Contact Us
+          Contact Us
         </Link>
-
+      </div>
 
       {/* Mobile Menu Button */}
       <button
-        className="hidden max-md:block mr-4 cursor-pointer active:rotate-360 active:opacity-0 transition-all duration-150"
-        onClick={updateMobileMenuOpen}
+        className="md:hidden ml-auto cursor-pointer"
+        onClick={() => setMobileMenuOpen((prev) => !prev)}
       >
-        <Menu size={30} color="white" />
+        <Menu size={30} color="black" />
       </button>
+
+      {/* Mobile Menu */}
+      {mobileMenuOpen && (
+        <div className="fixed inset-0 z-40 flex flex-col bg-black overflow-y-auto">
+          <button
+            className="absolute top-5 right-5 cursor-pointer p-2"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            <Plus color="white" size={30} className="rotate-45" />
+          </button>
+          <ul className="flex flex-col justify-center items-center gap-8 mt-24">
+            {Object.keys(pagesLinksList).map((pageKey) => (
+              <li key={pagesLinksList[pageKey]} className={currentPageStyle(pagesLinksList[pageKey])}>
+                <Link
+                  to={pagesLinksList[pageKey]}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="text-white text-2xl hover:text-cyan-500 transition-colors"
+                >
+                  {pageKey}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </header>
   );
 };
