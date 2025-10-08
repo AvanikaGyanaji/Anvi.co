@@ -1,38 +1,22 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import HeroSection from "../components/heroSection";
+import { pagesLinksList } from "../utils/PagesLinkList";
+
 const Industries = () => {
   return (
     <div id="industries" className="w-full">
       {/* Hero Section */}
-      <section className="relative w-full h-[722px] flex">
-        {/* Background Image */}
-        <div className="absolute inset-0">
-          <img
-            src="/images/robot.png"
-            alt="Team working"
-            className="w-full h-full object-cover item-center"
-          />
-          {/* Dark Overlay */}
-          <div className="absolute top-0 left-0 w-full clip-path-custom"></div>
-        </div>
-
-        {/* Hero Content */}
-        <div className="relative z-10 flex flex-col items-start pl-[62px] pt-[163px] max-w-[656px]">
-          <h1 className="text-[#282828] font-['Wix_Madefor_Display'] font-[600px] text-[56px] leading-[64px] tracking-[-2px]">
-            Industries We Transform
-          </h1>
-
-          <p className="mt-[16px] font-['Wix_Madefor_Display'] font-normal text-[16px] leading-[28px] text-[#000000]">
-            From Robotics to Space, Anvi transforms industries with intelligent
-            automation and advanced technology
-          </p>
-
-          <a
-            href="#industries"
-            className="mt-[24px] px-[20px] py-[10px] bg-cyan-500 hover:bg-cyan-600 text-white font-['Wix_Madefor_Display'] text-[16px] rounded-full shadow-md transition inline-flex items-center gap-2"
-          >
-            About Us <span className="text-xl"></span>
-          </a>
-        </div>
-      </section>
+      <HeroSection
+        backgroundImage="/images/robot.png"
+        title="Industries We Transform"
+        description="From Robotics to Space, Anvi transforms industries with intelligent automation 
+        and advanced technology."
+        buttonText="About Us"
+        buttonLink="#openings"
+        headingWidth="655px" 
+        descriptionWidth="656px"
+      />
 
       {/* Industries */}
       <section className="relative w-full px-[100px] py-[154px] bg-[#F4F3F7] bg-opacity[0.82]">
@@ -109,9 +93,11 @@ const Industries = () => {
                   critical infrastructure.
                 </p>
                 <div className="self-start pb-[64px]">
-                  <button className="rounded-[32px] border border-gray-200 text-gray-900 px-[23px] py-[11px]">
-                    Learn More
-                  </button>
+                  <Link to={pagesLinksList.Energy}>
+                    <button className="rounded-[32px] border border-gray-200 text-gray-900 px-[23px] py-[11px]">
+                      Learn More
+                    </button>
+                  </Link>
                 </div>
                 <img
                   src="/images/robotics.png"
@@ -134,9 +120,11 @@ const Industries = () => {
                 before.
               </p>
               <div className="self-start">
-                <button className="rounded-[32px] border border-gray-200 text-gray-900 px-[23px] py-[11px]">
-                  Learn More
-                </button>
+                <Link to={pagesLinksList.Entertainment}>
+                  <button className="rounded-[32px] border border-gray-200 text-gray-900 px-[23px] py-[11px]">
+                    Learn More
+                  </button>
+                </Link>
               </div>
             </div>
             <div>
@@ -160,9 +148,11 @@ const Industries = () => {
                 across next-generation electronics.
               </p>
               <div className="self-start">
-                <button className="rounded-[32px] border border-gray-200 text-gray-900 px-[23px] py-[11px]">
-                  Learn More
-                </button>
+                <Link to={pagesLinksList.SemiConductors}>
+                  <button className="rounded-[32px] border border-gray-200 text-gray-900 px-[23px] py-[11px]">
+                    Learn More
+                  </button>
+                </Link>
               </div>
             </div>
             <div>
@@ -187,9 +177,11 @@ const Industries = () => {
                   experiences.
                 </p>
                 <div className="self-start pb-[64px]">
+                  <Link to={pagesLinksList.Textiles}>
                   <button className="rounded-[32px] border border-gray-200 text-gray-900 px-[23px] py-[11px]">
                     Learn More
                   </button>
+                </Link>
                 </div>
                 <img
                   src="/images/robotics.png"
@@ -210,9 +202,11 @@ const Industries = () => {
                   create better lives
                 </p>
                 <div className="self-start pb-[64px]">
+                  <Link to={pagesLinksList.LifeSciences}>
                   <button className="rounded-[32px] border border-gray-200 text-gray-900 px-[23px] py-[11px]">
                     Learn More
                   </button>
+                </Link>
                 </div>
                 <img
                   src="/images/robotics.png"
@@ -235,9 +229,11 @@ const Industries = () => {
                 transforming futures.
               </p>
               <div className="self-start">
-                <button className="rounded-[32px] border border-gray-200 text-gray-900 px-[23px] py-[11px]">
-                  Learn More
-                </button>
+                <Link to={pagesLinksList.Foundations}>
+                  <button className="rounded-[32px] border border-gray-200 text-gray-900 px-[23px] py-[11px]">
+                    Learn More
+                  </button>
+                </Link>
               </div>
             </div>
             <div>

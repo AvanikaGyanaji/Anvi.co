@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ScrollToTop } from "./hooks/ScrollToTop";
 import { pagesLinksList } from "./utils/PagesLinkList";
 
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "./components/header";
+import Footer from "./components/footer";
 
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
@@ -21,7 +21,7 @@ import { Foundations } from "./pages/All_Industries/Foundations";
 import { LifeSciences } from "./pages/All_Industries/LifeSciences";
 import { SemiConductors } from "./pages/All_Industries/SemiConductors";
 import { Entertainment } from "./pages/All_Industries/Entertainment";
-import Careers from "./pages/Careers";
+import Careers from "./pages/careers";
 import { CareersOpenings } from "./pages/CareersInfo/CareersOpenings";
 import { CareersJobDesc } from "./pages/CareersInfo/CareersJobDesc";
 import { CareersJobApply } from "./pages/CareersInfo/CareersJobApply";

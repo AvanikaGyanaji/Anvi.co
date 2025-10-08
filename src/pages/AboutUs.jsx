@@ -1,4 +1,4 @@
-import HeroSection from "../components/HeroSection";
+import HeroSection from "../components/heroSection";
 
 const AboutUs = () => {
   return (
@@ -180,6 +180,40 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
+
+      {/* Section 4*/}
+      <div className="relative shadow-lg w-full h-[693px] sm:h-auto">
+        <img
+          src="/images/about4.png"
+          alt="Technological Excellence"
+          className="w-full h-full object-cover"
+        />
+
+        <div className="absolute inset-0 bg-[#1E1E1EE5] flex items-center justify-between pl-[102px] py-[115px] text-white gap-[38px]">
+          {/* Left Column - Text */}
+          <div className="max-w-[670px]">
+            <h3 className="max-w-[521px] font-dm-sans font-medium text-[48px] mb-[32px]">
+              Careers and Growth
+            </h3>
+            <p className="font-dm-sans text-[20px] font-normal leading-[32px] h-[224px]">
+              At Anvi, growth is about more than a job - it’s about solving real challenges, building deep-tech innovations, 
+              and shaping a sustainable future. Driven by purpose and inspired by our mission, our team explores 
+              ambitious ideas, works with breakthrough technologies, and creates impact across industries and communities. 
+              If you’re ready to grow and be part of a future engineered by innovation, your next role could start here.
+            </p>
+          </div>
+
+          {/* Right Column - Image */}
+          <div className="max-w-[615px]">
+            <img
+              src="images/vision.png"
+              alt="vision"
+              className="w-full h-auto object-contain"
+            />
+          </div>
+        </div>
+      </div>
+
 
       {/* Journey Section */}
       <div className="relative flex flex-col md:flex-row bg-white py-[80px] md:py-[100px] px-6 sm:px-12 md:px-32">
