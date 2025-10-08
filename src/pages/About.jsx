@@ -15,7 +15,7 @@ const About = () => {
         buttonText="Explore Careers"
         buttonLink="#openings"
         headingWidth="734px"
-        descriptionWidth="656px"
+        descriptionWidth="734px"
       />
 
       {/* Vision, Mission, Value Section */}

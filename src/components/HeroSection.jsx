@@ -6,8 +6,8 @@ const HeroSection = ({
   description,
   buttonText,
   buttonLink,
-  headingWidth = "full",
-  descriptionWidth = "full",
+  headingWidth,      // now only takes what is passed from page
+  descriptionWidth,  // now only takes what is passed from page
 }) => {
   return (
     <section className="relative w-full h-[742px] flex flex-col md:flex-row">
@@ -18,22 +18,21 @@ const HeroSection = ({
           alt={title}
           className="w-full h-full object-cover"
         />
-        {/* Keep overlay transparent */}
         <div className="absolute top-0 left-0 w-full h-full"></div>
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-10 flex flex-col items-start px-6 sm:px-12 md:pl-[62px] pt-[120px] md:pt-[163px] max-w-full md:max-w-[751px]">
+      <div className="relative z-10 flex flex-col items-start px-6 sm:px-12 md:pl-[62px] pt-[120px] md:pt-[163px]">
         <h1
           className="text-[#282828] font-['Wix_Madefor_Display'] font-[600px] text-[36px] sm:text-[44px] md:text-[56px] leading-tight tracking-[-1px] md:tracking-[-2px]"
-          style={{ maxWidth: headingWidth }}
+          style={{ width: headingWidth }}
         >
           {title}
         </h1>
 
         <p
-          className="mt-4 font-['Wix_Madefor_Display'] font-normal text-[15px] sm:text-[16px] leading-[26px] md:leading-[28px] text-[#000000]"
-          style={{ maxWidth: descriptionWidth }}
+          className="mt-4 font-['Wix_Madefor_Display'] font-normal text-[15px] sm:text-[16px] text-[#000000]"
+          style={{ width: descriptionWidth }}
         >
           {description}
         </p>
