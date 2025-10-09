@@ -30,6 +30,7 @@ import { PrivacyPolicy } from "./pages/PrivacyPolicy";
 const App = () => {
   return (
     <Router>
+      <div className="bg-[#FCFCFC]">
       <ScrollToTop />
       <Header />
       <Routes>
@@ -80,6 +81,7 @@ const App = () => {
         />        
       </Routes>
       <Footer />
+      </div>
     </Router>
   );
 };

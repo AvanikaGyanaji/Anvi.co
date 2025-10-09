@@ -1,7 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
 import HeroSection from "../components/heroSection";
 import { pagesLinksList } from "../utils/PagesLinkList";
+import Button from "../utils/Button";
 
 const Industries = () => {
   return (
@@ -19,7 +18,7 @@ const Industries = () => {
       />
 
       {/* Industries */}
-      <section className="relative w-full px-[100px] py-[154px] bg-[#F4F3F7] bg-opacity[0.82]">
+      <section className="relative w-full px-6 sm:px-12 md:px-[100px] py-12 sm:py-16 md:py-[154px] bg-[#F4F3F7] bg-opacity[0.82]">
         <div className="flex flex-col items-center text-center gap-[17px]">
           <h2 className="text-[#282828] font-dm-sans text-[54px] font-normal font-semibold leading-normal tracking-[-0.02em]">
             Industries of the Future
@@ -32,7 +31,7 @@ const Industries = () => {
         </div>
         <div className="grid gap-[50px] items-center">
           {/* Robotics */}
-          <div className="grid md:grid-cols-2 relative group transition-transform duration-300 ease-in-out hover:scale-102 origin-top-left p-[64px] rounded-[32px] bg-white gap-[64px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 relative group transition-transform duration-300 ease-in-out hover:scale-102 origin-top-left p-[64px] rounded-[32px] bg-white gap-6 sm:gap-12 md:gap-[64px]">
             <div className="flex flex-col justify-center pl-[21.63px]">
               <p className="font-normal text-[32px] mb-[15.59px] leading-normal tracking-[-0.02em] group-hover:text-cyan-600 transition-colors duration-300">
                 Robotics
@@ -43,23 +42,23 @@ const Industries = () => {
                 environments on Earth.
               </p>
               <div className="self-start">
-                <button className="rounded-[32px] border border-gray-200 text-gray-900 px-[23px] py-[11px]">
+                <Button variant="secondary">
                   Learn More
-                </button>
+                </Button>
               </div>
             </div>
             <div>
               <img
                 src="/images/robotics.png"
                 alt="Our Vision"
-                className="max-w-[444px] max-h-[518px] shadow-lg"
+                className="w-full sm:w-[300px] md:w-[444px] max-h-[518px] shadow-lg"
               />
             </div>
           </div>
 
           {/* Space  & Energy*/}
-          <div className="grid md:grid-cols-2 gap-[48px] items-center">
-            <div className="relative group transition-transform duration-300 ease-in-out hover:scale-102 origin-top-left p-[64px] rounded-[32px] bg-white gap-[64px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-[48px] items-center">
+            <div className="relative group transition-transform duration-300 ease-in-out hover:scale-102 origin-top-left p-[64px] rounded-[32px] bg-white gap-6 sm:gap-12 md:gap-[64px]">
               <div className="flex flex-col justify-center pl-[21.63px]">
                 <p className="font-normal text-[32px] mb-[14px] leading-normal tracking-[-0.02em] group-hover:text-cyan-600 transition-colors duration-300">
                   Space
@@ -70,19 +69,19 @@ const Industries = () => {
                   global needs.
                 </p>
                 <div className="self-start pb-[64px]">
-                  <button className="rounded-[32px] border border-gray-200 text-gray-900 px-[23px] py-[11px]">
+                  <Button variant="secondary">
                     Learn More
-                  </button>
+                  </Button>
                 </div>
                 <img
                   src="/images/robotics.png"
                   alt="Our Vision"
-                  className="max-w-[444px] max-h-[518px] shadow-lg"
+                  className="w-full sm:w-[300px] md:w-[444px] max-h-[518px] shadow-lg"
                 />
               </div>
             </div>
             {/* Energy */}
-            <div className="relative group transition-transform duration-300 ease-in-out hover:scale-102 origin-top-left p-[64px] rounded-[32px] bg-white gap-[64px]">
+            <div className="relative group transition-transform duration-300 ease-in-out hover:scale-102 origin-top-left p-[64px] rounded-[32px] bg-white gap-6 sm:gap-12 md:gap-[64px]">
               <div className="flex flex-col justify-center pl-[21.63px]">
                 <p className="font-normal text-[32px] mb-[14px] leading-normal tracking-[-0.02em] group-hover:text-cyan-600 transition-colors duration-300">
                   Energy
@@ -93,23 +92,21 @@ const Industries = () => {
                   critical infrastructure.
                 </p>
                 <div className="self-start pb-[64px]">
-                  <Link to={pagesLinksList.Energy}>
-                    <button className="rounded-[32px] border border-gray-200 text-gray-900 px-[23px] py-[11px]">
+                    <Button to={pagesLinksList.Energy} variant="secondary">
                       Learn More
-                    </button>
-                  </Link>
+                    </Button>
                 </div>
                 <img
                   src="/images/robotics.png"
                   alt="Our Vision"
-                  className="max-w-[444px] max-h-[518px] shadow-lg"
+                  className="w-full sm:w-[300px] md:w-[444px] max-h-[518px] shadow-lg"
                 />
               </div>
             </div>
           </div>
 
           {/* Entertainment */}
-          <div className="grid md:grid-cols-2 relative group transition-transform duration-300 ease-in-out hover:scale-102 origin-top-left p-[64px] rounded-[32px] bg-white gap-[64px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 relative group transition-transform duration-300 ease-in-out hover:scale-102 origin-top-left p-[64px] rounded-[32px] bg-white gap-6 sm:gap-12 md:gap-[64px]">
             <div className="flex flex-col justify-center pl-[21.63px]">
               <p className="font-normal text-[32px] mb-[15.59px] leading-normal tracking-[-0.02em] group-hover:text-cyan-600 transition-colors duration-300">
                 Entertainment
@@ -120,24 +117,22 @@ const Industries = () => {
                 before.
               </p>
               <div className="self-start">
-                <Link to={pagesLinksList.Entertainment}>
-                  <button className="rounded-[32px] border border-gray-200 text-gray-900 px-[23px] py-[11px]">
+                  <Button to={pagesLinksList.Entertainment} variant="secondary">
                     Learn More
-                  </button>
-                </Link>
+                  </Button>
               </div>
             </div>
             <div>
               <img
                 src="/images/robotics.png"
                 alt="Our Vision"
-                className="max-w-[444px] max-h-[518px] shadow-lg"
+                className="w-full sm:w-[300px] md:w-[444px] max-h-[518px] shadow-lg"
               />
             </div>
           </div>
 
           {/* Semiconductors */}
-          <div className="grid md:grid-cols-2 relative group transition-transform duration-300 ease-in-out hover:scale-102 origin-top-left p-[64px] rounded-[32px] bg-white gap-[64px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 relative group transition-transform duration-300 ease-in-out hover:scale-102 origin-top-left p-[64px] rounded-[32px] bg-white gap-6 sm:gap-12 md:gap-[64px]">
             <div className="flex flex-col justify-center pl-[21.63px]">
               <p className="font-normal text-[32px] mb-[15.59px] leading-normal tracking-[-0.02em] group-hover:text-cyan-600 transition-colors duration-300">
                 Semiconductors
@@ -148,25 +143,23 @@ const Industries = () => {
                 across next-generation electronics.
               </p>
               <div className="self-start">
-                <Link to={pagesLinksList.SemiConductors}>
-                  <button className="rounded-[32px] border border-gray-200 text-gray-900 px-[23px] py-[11px]">
+                  <Button to={pagesLinksList.SemiConductors} variant="secondary">
                     Learn More
-                  </button>
-                </Link>
+                  </Button>
               </div>
             </div>
             <div>
               <img
                 src="/images/robotics.png"
                 alt="Our Vision"
-                className="max-w-[444px] max-h-[518px] shadow-lg"
+                className="w-full sm:w-[300px] md:w-[444px] max-h-[518px] shadow-lg"
               />
             </div>
           </div>
 
           {/* Textiles  & LifeSciences*/}
-          <div className="grid md:grid-cols-2 gap-[48px] items-center">
-            <div className="relative group transition-transform duration-300 ease-in-out hover:scale-102 origin-top-left p-[64px] rounded-[32px] bg-white gap-[64px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-[48px] items-center">
+            <div className="relative group transition-transform duration-300 ease-in-out hover:scale-102 origin-top-left p-[64px] rounded-[32px] bg-white gap-6 sm:gap-12 md:gap-[64px]">
               <div className="flex flex-col justify-center pl-[21.63px]">
                 <p className="font-normal text-[32px] mb-[14px] leading-normal tracking-[-0.02em] group-hover:text-cyan-600 transition-colors duration-300">
                   Textiles
@@ -177,21 +170,19 @@ const Industries = () => {
                   experiences.
                 </p>
                 <div className="self-start pb-[64px]">
-                  <Link to={pagesLinksList.Textiles}>
-                  <button className="rounded-[32px] border border-gray-200 text-gray-900 px-[23px] py-[11px]">
+                  <Button to={pagesLinksList.Textiles} variant="secondary">
                     Learn More
-                  </button>
-                </Link>
+                  </Button>
                 </div>
                 <img
                   src="/images/robotics.png"
                   alt="Our Vision"
-                  className="max-w-[444px] max-h-[518px] shadow-lg"
+                  className="w-full sm:w-[300px] md:w-[444px] max-h-[518px] shadow-lg"
                 />
               </div>
             </div>
             {/* Life Sciences */}
-            <div className="relative group transition-transform duration-300 ease-in-out hover:scale-102 origin-top-left p-[64px] rounded-[32px] bg-white gap-[64px]">
+            <div className="relative group transition-transform duration-300 ease-in-out hover:scale-102 origin-top-left p-[64px] rounded-[32px] bg-white gap-6 sm:gap-12 md:gap-[64px]">
               <div className="flex flex-col justify-center pl-[21.63px]">
                 <p className="font-normal text-[32px] mb-[14px] leading-normal tracking-[-0.02em] group-hover:text-cyan-600 transition-colors duration-300">
                   Life Sciences
@@ -202,23 +193,21 @@ const Industries = () => {
                   create better lives
                 </p>
                 <div className="self-start pb-[64px]">
-                  <Link to={pagesLinksList.LifeSciences}>
-                  <button className="rounded-[32px] border border-gray-200 text-gray-900 px-[23px] py-[11px]">
+                  <Button to={pagesLinksList.LifeSciences} variant="secondary">
                     Learn More
-                  </button>
-                </Link>
+                  </Button>
                 </div>
                 <img
                   src="/images/robotics.png"
                   alt="Our Vision"
-                  className="max-w-[444px] max-h-[518px] shadow-lg"
+                  className="w-full sm:w-[300px] md:w-[444px] max-h-[518px] shadow-lg"
                 />
               </div>
             </div>
           </div>
 
           {/* Foundation */}
-          <div className="grid md:grid-cols-2 relative group transition-transform duration-300 ease-in-out hover:scale-102 origin-top-left p-[64px] rounded-[32px] bg-white gap-[64px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 relative group transition-transform duration-300 ease-in-out hover:scale-102 origin-top-left p-[64px] rounded-[32px] bg-white gap-6 sm:gap-12 md:gap-[64px]">
             <div className="flex flex-col justify-center pl-[21.63px]">
               <p className="font-normal text-[32px] mb-[15.59px] leading-normal tracking-[-0.02em] group-hover:text-cyan-600 transition-colors duration-300">
                 Foundation
@@ -229,18 +218,16 @@ const Industries = () => {
                 transforming futures.
               </p>
               <div className="self-start">
-                <Link to={pagesLinksList.Foundations}>
-                  <button className="rounded-[32px] border border-gray-200 text-gray-900 px-[23px] py-[11px]">
-                    Learn More
-                  </button>
-                </Link>
+                <Button to={pagesLinksList.Foundations} variant="secondary">
+                  Learn More
+                </Button>
               </div>
             </div>
             <div>
               <img
                 src="/images/robotics.png"
                 alt="Our Vision"
-                className="max-w-[444px] max-h-[518px] shadow-lg"
+                className="w-full sm:w-[300px] md:w-[444px] max-h-[518px] shadow-lg"
               />
             </div>
           </div>

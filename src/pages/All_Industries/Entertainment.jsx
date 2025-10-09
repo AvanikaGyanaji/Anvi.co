@@ -4,7 +4,7 @@ import IndustryLayout from "../../components/IndustryLayout";
 export const Entertainment = () => {
   return (
     <IndustryLayout
-      backgroundImage="/images/energy.png"
+      backgroundImage="/images/entertainment.png"
       title="Entertainment"
       description="From vision to experience, we turn imagination into reality. Where immersion meets boundless creativity, stories come alive."
       buttonText="About Us"

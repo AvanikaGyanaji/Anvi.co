@@ -48,7 +48,7 @@ const IndustryLayout = ({
 
         {/* Example Cards */}
         <div className="px-6 md:px-[157px] w-full">
-          <div className="grid md:grid-cols-2 gap-[48px] items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-[48px] items-center">
             {/* Robotics */}
             <div className="relative group transition-transform duration-300 ease-in-out hover:scale-[1.02] origin-top-left p-6 md:p-[64px] rounded-[32px] bg-white gap-[64px]">
               <div className="flex flex-col justify-center pl-[21.63px]">
@@ -64,7 +64,7 @@ const IndustryLayout = ({
                 <img
                   src="/images/robotics.png"
                   alt="Robotics"
-                  className="max-w-[444px] max-h-[518px] shadow-lg mt-8"
+                  className="w-full sm:w-[300px] md:w-[444px] max-h-[518px] shadow-lg mt-8"
                 />
               </div>
             </div>
@@ -84,7 +84,7 @@ const IndustryLayout = ({
                 <img
                   src="/images/robotics.png"
                   alt="Robotics"
-                  className="max-w-[444px] max-h-[518px] shadow-lg mt-8"
+                  className="w-full sm:w-[300px] md:w-[444px] max-h-[518px] shadow-lg mt-8"
                 />
               </div>
             </div>

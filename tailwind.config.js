@@ -15,6 +15,7 @@ module.exports = {
         wix: ['"Wix Madefor Display"', 'sans-serif'],
         inter: ['"Inter"', 'sans-serif'],
         urbanist: ['Urbanist', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
       },
     },
   },
