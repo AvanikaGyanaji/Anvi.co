@@ -4,22 +4,21 @@ import Button from "../utils/Button";
 
 const Industries = () => {
   return (
-    <div id="industries" className="w-full">
+    <div id="industries" className="w-full pt-[106px]">
       {/* Hero Section */}
       <HeroSection
-        backgroundImage="/images/robot.png"
+        backgroundImage="/images/industries/hero.png"
         title="Industries We Transform"
         description="From Robotics to Space, Anvi transforms industries with intelligent automation 
         and advanced technology."
         buttonText="About Us"
         buttonLink="#openings"
-        headingWidth="655px" 
         descriptionWidth="656px"
       />
 
       {/* Industries */}
-      <section className="relative w-full px-6 sm:px-12 md:px-[100px] py-12 sm:py-16 md:py-[154px] bg-[#F4F3F7] bg-opacity[0.82]">
-        <div className="flex flex-col items-center text-center gap-[17px]">
+      <section className="relative w-full px-6 sm:px-12 md:px-[80px] py-12 sm:py-16 md:py-[154px] bg-[#F4F3F7] bg-opacity[0.82]">
+        <div className="flex flex-col items-center text-center gap-[17px] mb-20">
           <h2 className="text-[#282828] font-dm-sans text-[54px] font-normal font-semibold leading-normal tracking-[-0.02em]">
             Industries of the Future
           </h2>
@@ -57,7 +56,7 @@ const Industries = () => {
           </div>
 
           {/* Space  & Energy*/}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-[48px] items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-[48px] items-stretch">
             <div className="relative group transition-transform duration-300 ease-in-out hover:scale-102 origin-top-left p-[64px] rounded-[32px] bg-white gap-6 sm:gap-12 md:gap-[64px]">
               <div className="flex flex-col justify-center pl-[21.63px]">
                 <p className="font-normal text-[32px] mb-[14px] leading-normal tracking-[-0.02em] group-hover:text-cyan-600 transition-colors duration-300">

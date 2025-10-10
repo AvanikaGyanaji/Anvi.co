@@ -3,16 +3,15 @@ import { pagesLinksList } from "../utils/PagesLinkList";
 
 const Careers = () => {
   return (
-    <div id="careers" className="w-full">
+    <div id="careers" className="w-full pt-[106px]">
       {/* Hero Section */}
       <HeroSection
-        backgroundImage="/images/careers.png"
+        backgroundImage="/images/careers/hero.png"
         title="Engineer the Future With Us"
         description="At Anvi, we're building tomorrow's technology today - and we want visionaries like 
             you to join us in creating the next generation of intelligent systems."
         buttonText="Browse Openings"
         buttonLink={pagesLinksList.Career_Openings}
-        headingWidth="751px"
         descriptionWidth="656px"
       />
 
@@ -28,7 +27,7 @@ const Careers = () => {
         </div>
         <div className="font-dm-sans font-normal grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-[67.39px]">
           <div>
-            <img src="/images/career2.1.png" alt="Team" className="w-" />
+            <img src="/images/careers/career2.1.png" alt="Team" className="w-" />
             <p className="mt-[32px] font-normal text-[24px]">
               Innovate with Purpose
             </p>
@@ -42,7 +41,7 @@ const Careers = () => {
             </p>
           </div>
           <div>
-            <img src="/images/career2.2.png" alt="Team" className="w-full sm:w-[300px] md:w-auto" />
+            <img src="/images/careers/career2.2.png" alt="Team" className="w-full sm:w-[300px] md:w-auto" />
             <p className="mt-[32px] font-normal text-[24px]">
               Grow Without Limits
             </p>
@@ -53,7 +52,7 @@ const Careers = () => {
             </p>
           </div>
           <div>
-            <img src="/images/career2.3.png" alt="Team" className="w-" />
+            <img src="/images/careers/career2.3.png" alt="Team" className="w-" />
             <p className="mt-[32px] font-normal text-[24px]">
               Collaborate & Belong
             </p>
@@ -64,7 +63,7 @@ const Careers = () => {
             </p>
           </div>
           <div>
-            <img src="/images/career2.4.png" alt="Team" className="w-" />
+            <img src="/images/careers/career2.4.png" alt="Team" className="w-" />
             <p className="mt-[32px] font-normal text-[24px]">
               Impact That Matters
             </p>
@@ -82,7 +81,7 @@ const Careers = () => {
         {/* Background image */}
         <div className="absolute inset-0">
           <img
-            src="images/career3.1.png"
+            src="images/careers/career3.1.png"
             alt="Team working"
             className="w-full h-full object-cover opacity-80"
           />
@@ -140,7 +139,7 @@ const Careers = () => {
   {/* Image Section */}
   <div className="w-full">
     <img
-      src="images/career4.png"
+      src="images/careers/career4.png"
       alt="Team"
       className="w-full h-auto object-cover rounded-lg"
     />

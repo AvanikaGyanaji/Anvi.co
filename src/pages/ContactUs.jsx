@@ -11,15 +11,14 @@ export const ContactUs= () => {
     };
     
   return (
-    <div className="w-full bg-[#FCFCFC]">
+    <div className="w-full pt-[106px]">
         <HeroSection
-            backgroundImage="/images/contact.png"
+            backgroundImage="/images/contactus/hero.jpg"
             title="Let's Build the Future Together"
             description="Have a question, partnership idea, or project in mind? Get in touch with our team of
                 innovation experts and let's create something extraordinary."
             buttonText="About Us"
             buttonLink="#about"
-            headingWidth="815px"
             descriptionWidth="656px"
         />
 
@@ -103,6 +102,14 @@ export const ContactUs= () => {
                 <p className="text-[48px] font-medium">Visit Our Office</p>
                 <p className="text-[16px] text-[#465455] font-normal">Located in the heart of Hyderabad's tech corridor</p>
             </div>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.053305362681!2d78.36793007385417!3d17.45716258344194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93cf9bc32c83%3A0x1e85e5cc49998439!2sProfound%20Builders!5e0!3m2!1sen!2sin!4v1760070770156!5m2!1sen!2sin" 
+                className="w-full h-[450px] rounded-[12px] shadow-lg" 
+                style={{border:0}} 
+                allowFullScreen="" 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade">
+            </iframe>
         </section>
 
         {/*Section 4 Questions */}
