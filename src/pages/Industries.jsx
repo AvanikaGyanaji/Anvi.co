@@ -4,7 +4,7 @@ import Button from "../utils/Button";
 
 const Industries = () => {
   return (
-    <div id="industries" className="w-full pt-[106px]">
+    <div id="industries" className="w-full">
       {/* Hero Section */}
       <HeroSection
         backgroundImage="/images/industries/hero.png"
@@ -41,13 +41,12 @@ const Industries = () => {
                 environments on Earth.
               </p>
               <div className="self-start">
-                <Button variant="secondary">
-                  Learn More
-                </Button>
+                <Button variant="secondary">Learn More</Button>
               </div>
             </div>
             <div>
               <img
+                loading="lazy"
                 src="/images/robotics.png"
                 alt="Our Vision"
                 className="w-full sm:w-[300px] md:w-[444px] max-h-[518px] shadow-lg"
@@ -68,11 +67,10 @@ const Industries = () => {
                   global needs.
                 </p>
                 <div className="self-start pb-[64px]">
-                  <Button variant="secondary">
-                    Learn More
-                  </Button>
+                  <Button variant="secondary">Learn More</Button>
                 </div>
                 <img
+                  loading="lazy"
                   src="/images/robotics.png"
                   alt="Our Vision"
                   className="w-full sm:w-[300px] md:w-[444px] max-h-[518px] shadow-lg"
@@ -91,11 +89,12 @@ const Industries = () => {
                   critical infrastructure.
                 </p>
                 <div className="self-start pb-[64px]">
-                    <Button to={pagesLinksList.Energy} variant="secondary">
-                      Learn More
-                    </Button>
+                  <Button to={pagesLinksList.Energy} variant="secondary">
+                    Learn More
+                  </Button>
                 </div>
                 <img
+                  loading="lazy"
                   src="/images/robotics.png"
                   alt="Our Vision"
                   className="w-full sm:w-[300px] md:w-[444px] max-h-[518px] shadow-lg"
@@ -116,13 +115,14 @@ const Industries = () => {
                 before.
               </p>
               <div className="self-start">
-                  <Button to={pagesLinksList.Entertainment} variant="secondary">
-                    Learn More
-                  </Button>
+                <Button to={pagesLinksList.Entertainment} variant="secondary">
+                  Learn More
+                </Button>
               </div>
             </div>
             <div>
               <img
+                loading="lazy"
                 src="/images/robotics.png"
                 alt="Our Vision"
                 className="w-full sm:w-[300px] md:w-[444px] max-h-[518px] shadow-lg"
@@ -142,13 +142,14 @@ const Industries = () => {
                 across next-generation electronics.
               </p>
               <div className="self-start">
-                  <Button to={pagesLinksList.SemiConductors} variant="secondary">
-                    Learn More
-                  </Button>
+                <Button to={pagesLinksList.SemiConductors} variant="secondary">
+                  Learn More
+                </Button>
               </div>
             </div>
             <div>
               <img
+                loading="lazy"
                 src="/images/robotics.png"
                 alt="Our Vision"
                 className="w-full sm:w-[300px] md:w-[444px] max-h-[518px] shadow-lg"
@@ -174,6 +175,7 @@ const Industries = () => {
                   </Button>
                 </div>
                 <img
+                  loading="lazy"
                   src="/images/robotics.png"
                   alt="Our Vision"
                   className="w-full sm:w-[300px] md:w-[444px] max-h-[518px] shadow-lg"
@@ -197,6 +199,7 @@ const Industries = () => {
                   </Button>
                 </div>
                 <img
+                  loading="lazy"
                   src="/images/robotics.png"
                   alt="Our Vision"
                   className="w-full sm:w-[300px] md:w-[444px] max-h-[518px] shadow-lg"
@@ -224,6 +227,7 @@ const Industries = () => {
             </div>
             <div>
               <img
+                loading="lazy"
                 src="/images/robotics.png"
                 alt="Our Vision"
                 className="w-full sm:w-[300px] md:w-[444px] max-h-[518px] shadow-lg"

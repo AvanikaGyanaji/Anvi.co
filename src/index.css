@@ -8,3 +8,140 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    max-width: 2400px;
+    margin: auto;
+    height: auto;
+    overflow: hidden auto;
+}
+
+main {
+    width: 100%;
+    max-width: 1800px;
+    margin: auto;
+    min-height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 0;
+    z-index: -1;
+}
+
+/* For Chrome, Edge, and Safari */
+body {
+    scrollbar-width: thin;
+    scrollbar-color: #1E9AB0 transparent;
+}
+
+body::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #1E9AB0;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #1E9AB0;
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+}
+body::-webkit-scrollbar-corner {
+    background: transparent;
+}
+/* Header */
+.currentPageLink {
+    color: #1E9AB0 !important;
+    font-weight: 500 !important;
+    transform: scale(1.1) !important;
+}
+@media screen and (max-width: 768px) {
+    .footer-contact {
+        margin-inline: auto !important;
+        place-items: center !important;
+    }
+}
+
+
+/* Hero Section */
+.link-round-mid {
+    cursor: pointer;
+    width: max-content;
+    padding: 10px 16px;
+    border-radius: 16px;
+    border: 2px solid #1E9AB0;
+    color: #1E9AB0;
+    font-family: Wix Madefor Display;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26.01px;
+    position: relative;
+    overflow: hidden;
+    transition: Color 0.3s ease-out;
+
+    &:hover {
+        color: #fff;
+        border-color: transparent;
+        box-shadow: 0px 8px 20px 0px #1E9AB052;
+    }
+}
+
+.link-round-mid::before {
+    content: '';
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    z-index: -10;
+    width: 0%;
+    height: 103%;
+    border-radius: 16px;
+    background-color: #1E9AB0;
+    transition: width 0.3s ease-out;
+}
+
+.link-round-mid:hover::before {
+    width: 101%;
+}
+
+
+.link-bg-icon {
+    background-color: #1E9AB0;
+    color: white;
+    border-radius: 16px;
+    padding: 12px 20px;
+    font-family: 'Madefor', sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s ease-in-out;
+
+    >i {
+        transition: all 0.2s ease-in-out;
+    }
+}
+
+.link-bg-icon:hover {
+    box-shadow: 0px 8px 20px 0px #1E9AB052;
+    transform: scale(1.02);
+
+    >i {
+        transform: scale(1.15) translateX(3px) rotate(90deg);
+    }
+}
+
+.next-at-anvi ul::-webkit-scrollbar {
+    width: 0px;
+}

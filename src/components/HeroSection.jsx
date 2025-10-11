@@ -7,28 +7,24 @@ const HeroSection = ({
   description,
   buttonText,
   buttonLink,
-  descriptionWidth
+  descriptionWidth,
 }) => {
   return (
     <section className="w-full h-[calc(100vh-106px)] overflow-hidden flex justify-start items-start relative">
       {/* Hero Content */}
-      <div className="home-hero-content sticky z-10 w-full md:max-w-[1113px] flex flex-col justify-start items-start gap-[16px] font-['Wix Madefor Display'] ml-[2vw] md:ml-[60px] mt-[50px] md:mt-[56px]">
+      <div className="home-hero-content sticky z-10 w-full md:max-w-[657px] flex flex-col justify-start align-middle gap-[16px] font-[Wix Madefor Display] ml-[2vw] md:ml-[60px] lg:ml-[5vw] mt-[50px] md:mt-[60px] lg:mt-[11vh]">
+
         <h1 className="text-[48px] md:text-[56px] text-[#282828] font-[600] leading-tight">
           {title}
         </h1>
 
         <p
-          className="w-full max-md:w-[85%] max-md:max-w-[600px] text-[16px] font-[400] leading-[24px] text-black max-md:px-2 md:w-auto"
-          style={{ width: window.innerWidth >= 768 ? descriptionWidth : "auto" }}
-        >
+          className="w-full max-md:w-[85%] max-md:max-w-[600px] text-[16px] font-[400] leading-[24px] text-black max-md:px-2 md:w-auto">
           {description}
         </p>
 
         {buttonText && buttonLink && (
-          <Link
-            to={buttonLink}
-            className="link-round-mid mt-[8px] max-md:px-2"
-          >
+          <Link to={buttonLink} className="link-round-mid mt-[8px] max-md:px-2">
             {buttonText}
           </Link>
         )}

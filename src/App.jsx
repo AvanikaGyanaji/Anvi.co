@@ -3,9 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ScrollToTop } from "./hooks/ScrollToTop";
 import { pagesLinksList } from "./utils/PagesLinkList";
 
-import Header from "./components/header";
-import Footer from "./components/footer";
-
+import Header from "./components/Header";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import Industries from "./pages/Industries";
@@ -80,7 +78,6 @@ const App = () => {
           element={<CareersJobApply />}
         />        
       </Routes>
-      <Footer />
       </div>
     </Router>
   );
