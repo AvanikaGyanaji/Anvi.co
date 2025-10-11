@@ -1,8 +1,8 @@
-import HeroSection from "../components/heroSection"
+import HeroSection from "../components/heroSection";
 
 export const News = () => {
-    return(
-    <div id="news" className="w-full pt-[106px]">
+  return (
+    <div id="news" className="w-full">
       {/* Hero Section */}
       <HeroSection
         backgroundImage="/images/news/hero1.png"
@@ -13,5 +13,5 @@ export const News = () => {
         descriptionWidth="570px"
       />
     </div>
-    );
+  );
 };

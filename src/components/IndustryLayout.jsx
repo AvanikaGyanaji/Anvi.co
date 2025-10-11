@@ -62,6 +62,7 @@ const IndustryLayout = ({
                   Learn More
                 </button>
                 <img
+                  loading="lazy"
                   src="/images/robotics.png"
                   alt="Robotics"
                   className="w-full sm:w-[300px] md:w-[444px] max-h-[518px] shadow-lg mt-8"
@@ -82,6 +83,7 @@ const IndustryLayout = ({
                   Learn More
                 </button>
                 <img
+                  loading="lazy"
                   src="/images/robotics.png"
                   alt="Robotics"
                   className="w-full sm:w-[300px] md:w-[444px] max-h-[518px] shadow-lg mt-8"
