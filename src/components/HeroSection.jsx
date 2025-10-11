@@ -25,12 +25,12 @@ const HeroSection = ({
         </p>
 
         {buttonText && buttonLink && (
-          <Link
+          <Button
             to={buttonLink}
-            className="link-round-mid mt-[8px] max-md:px-2"
+            className="link-round-mid variants-primary mt-[8px] max-md:px-2"
           >
             {buttonText}
-          </Link>
+          </Button>
         )}
       </div>
 
